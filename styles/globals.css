@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-[#0F172A] text-gray-300
+    }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+
+.header-main {
+    margin: 0;
+    background: url("https://res.cloudinary.com/dwmm1r1ph/image/upload/v1649610823/jobs_pic/pawk7yilbag0awifmjdr.jpg");
+    background-size: cover;
+    height: 50vh;
+}
