@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Gauravjadhav22.github.io/food-recipe-app-nextjs",
   "name": "food-recipe-app",
   "version": "0.1.0",
   "private": true,
@@ -6,10 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "yarn run build",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "gh-pages": "^3.2.3",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",

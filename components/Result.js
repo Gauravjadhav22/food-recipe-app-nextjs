@@ -79,7 +79,7 @@ function Result(
 
           <ul>
             {postData.ingredients.map((item) => (
-              <li>{item}</li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
           <br />
@@ -88,7 +88,7 @@ function Result(
             {postData.instructions.map((item) => {
               return (
                 <>
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                   <br />
                 </>
               );
@@ -98,7 +98,7 @@ function Result(
 
           <ul>
             {Object.entries(postData.nutrients).map(([key]) => (
-              <li>{key.value}</li>
+              <li key={key}>{key.value}</li>
             ))}
           </ul>
         </div>
